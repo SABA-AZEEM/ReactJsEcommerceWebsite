@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 1rem 3rem;
+}
+.navbar{
+    background-color: rgb(1, 94, 1);
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+}
+.bars-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bars{
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    color: white;
+}
+.nav-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-logo p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.nav-menu{
+    list-style: none;
+}
+.nav-menu > li{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.nav-login-cart{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 3rem; */
+}
+.nav-login-cart button{
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 6rem;
+    height: 40px;
+    border-radius: 100px;
+    font-weight: 800;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-login-cart img{
+    cursor: pointer;
+    font-weight: 900;
+    color: white;
+}
+.nav-cart-count{
+    width: 22px;
+    height: 20px;
+    background-color: red;
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 40px;
+}
+.menu-open{
+    display: none;
+}
+
+@media (min-width:800px) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bars{
+        display: none;
+    }
+    .menu-open{
+        display: inline-block;
+        width: 100%;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-menu{
+        display: flex;
+        gap: 30px;
+    }
+    .nav-login-cart{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+    .nav-cart-count{
+        margin-top: -45px;
+        margin-left: -35px;
+    }
+    
+}
